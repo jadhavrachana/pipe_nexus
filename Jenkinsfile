@@ -40,11 +40,11 @@ pipeline {
 
             steps {
 
-                sh 'ssh root@192.168.1.101 rm -fR ${TOMCAT_HOME}/webapps/RestDemo-0.0.1*
+               sh 'ssh root@192.168.1.101 rm -fR /var/lib/tomcat/webapps/RestDemo-0.0.1*
 
-                sh 'ssh root@192.168.1.101 ls ${TOMCAT_HOME}/webapps/'
+               sh 'ssh root@192.168.1.101 ls /var/lib/tomcat/webapps/'
 
-                sh 'scp target/RestDemo-0.0.1-SNAPSHOT.war root@192.168.1.101:${TOMCAT_HOME}/webapps/'
+               sh 'scp target/RestDemo-0.0.1-SNAPSHOT.war root@192.168.1.101:/var/lib/tomcat/webapps/'
 
             }
 
