@@ -2,5 +2,5 @@ projectKey=src
 serverUrl=http://192.168.1.101:9000
 serverVersion=7.7.0.23042
 dashboardUrl=http://192.168.1.101:9000/dashboard?id=src
-ceTaskId=AWr45WokbTxtemwPez3V
-ceTaskUrl=http://192.168.1.101:9000/api/ce/task?id=AWr45WokbTxtemwPez3V
+ceTaskId=AWr464ZCbTxtemwPez3X
+ceTaskUrl=http://192.168.1.101:9000/api/ce/task?id=AWr464ZCbTxtemwPez3X
