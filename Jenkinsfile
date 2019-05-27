@@ -1,4 +1,4 @@
-peline {
+pipeline {
 
     agent any
 
@@ -7,7 +7,7 @@ peline {
         stage('SCM') {
 
             steps {
-                    git "https://github.com/jadhavrachana/sonar.git"
+                    git "https://github.com/jadhavrachana/pipe_nexus.git"
                 //
             }
         }
