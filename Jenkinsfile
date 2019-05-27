@@ -44,7 +44,7 @@ pipeline {
 
                sh "ssh root@192.168.1.101 ls /var/lib/tomcat/webapps/"
 
-               sh "scp target/RestDemo-0.0.1-SNAPSHOT.war root@192.168.1.101:/var/lib/tomcat/webapps/"
+               sh "scp target/*.war root@192.168.1.101:/var/lib/tomcat/webapps/"
 
             }
 
