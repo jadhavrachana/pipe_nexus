@@ -36,15 +36,17 @@ pipeline {
             }
        }
 
-       stage('Code Coverage') {
+      stage ('Deploy') {
 
-          steps {
+            steps {
 
-        junit '*/build/test-results/*.xml'
+                sh 'ssh root@192.168.1.101 rm -fR ${TOMCAT_HOME}/webapps/RestDemo-0.0.1*
 
-        step( [ $class: 'JacocoPublisher' ] )
+                sh 'ssh root@192.168.1.101 ls ${TOMCAT_HOME}/webapps/'
 
-     }
+                sh 'scp target/RestDemo-0.0.1-SNAPSHOT.war root@192.168.1.101:${TOMCAT_HOME}/webapps/'
+
+            }
 
         }
 
